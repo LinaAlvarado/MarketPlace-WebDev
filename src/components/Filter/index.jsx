@@ -1,24 +1,25 @@
 import { useState } from "react";
-// import { useWaiterContext } from "../../../context/WaiterContext";
-// import { CardProducts } from "./ContainerProducts/CardProducts";
 import "./style.css";
 
 export const Filter = () => {
 
       const [typeMenu, setTypeMenu] = useState("Filtar");
-    //   const { products } = useWaiterContext();
+      const [search, setSearch] = useState("");
 
 
       const handleTypeMenu = (e) => {
         setTypeMenu(e.target.value);
       };
 
+      const handleSearch = (event) => {
+        setSearch(event.target.value);
+      };
 
     return (
         <div className="containerFilter">
             <h1 className="container-title"> ¿Qué quieres comprar hoy? </h1>
             <div class="searchBox">
-                <input type="text" value="" placeholder='Buscar "iphone.."' class="search_text"></input>
+                <input type="text" value={search} placeholder='Buscar "iphone.."' class="search_text" onChange={handleSearch}></input>
                 <div class="searchBox_icon-lupa"></div>
             </div>
 
