@@ -1,4 +1,7 @@
 .container_products{
     width: 80%;
-    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    /* background-color: aqua; */
 }
