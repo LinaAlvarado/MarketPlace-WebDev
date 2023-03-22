@@ -1,12 +1,16 @@
+
+import { Filter } from "../Filter"
+import { Products } from "../Productos"
 import NavBar from "../NavBar/NavBar"
 
 const Layout = () => {
-return (
-    <div>
-        <NavBar/>
-        <h1> Layout </h1>
-    </div>
- 
-)
+    return (
+        <>
+            <NavBar/>
+            <Filter />
+            <Products />
+
+        </>
+    )
 }
 export default Layout
