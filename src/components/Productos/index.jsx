@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Card } from "../Card";
 import "./style.css";
 
 export const Products = () => {
@@ -30,7 +31,7 @@ export const Products = () => {
                     {
                         products.map((element)=>{
                             return (
-                                <span>{element.title}</span>
+                                <Card element={element}/>
                             )
                         })
                     }
