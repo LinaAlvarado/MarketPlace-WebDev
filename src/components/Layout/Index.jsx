@@ -1,7 +1,14 @@
-const Layout = () => {
-return (
+import { Filter } from "../Filter"
+import { Products } from "../Productos"
 
-    <h1> Layout </h1>
-)
+const Layout = () => {
+    return (
+        <>
+            <h1> Layout </h1>
+            <Filter />
+            <Products />
+
+        </>
+    )
 }
 export default Layout
