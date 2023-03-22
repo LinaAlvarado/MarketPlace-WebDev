@@ -15,9 +15,10 @@ export const Filter = () => {
 
 
     return (
-        <div class="containerFilter">
+        <div className="containerFilter">
+            <h1 className="container-title"> ¿Qué quieres comprar hoy? </h1>
             <div class="searchBox">
-                <input type="text" value="" placeholder="Buscar" class="search_text"></input>
+                <input type="text" value="" placeholder='Buscar "iphone.."' class="search_text"></input>
                 <div class="searchBox_icon-lupa"></div>
             </div>
 
