@@ -22,11 +22,11 @@ export const Filter = () => {
                 <div class="searchBox_icon-lupa"></div>
             </div>
 
-            <select className="filter_select" name="select_type" value={typeMenu} onChange={handleTypeMenu}>
+           {/*  <select className="filter_select" name="select_type" value={typeMenu} onChange={handleTypeMenu}>
                 <option >1</option>
                 <option >2</option>
                 <option >3</option>
-            </select>
+            </select> */}
         </div>
     );
 };

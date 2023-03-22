@@ -21,8 +21,6 @@ export const Products = () => {
 
     return (    
         <div class="sectionProducts">
-            <h3>Nuestros Productos</h3>
-
 
             {products === [] ? (
                  <h1>Cargando ...</h1>

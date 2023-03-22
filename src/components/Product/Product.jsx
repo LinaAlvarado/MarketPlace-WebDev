@@ -2,8 +2,10 @@ import './Product.css'
 import { requestOneProduct } from '../../lib/requests'
 import { useEffect, useState } from 'react'
 import NavBar from '../NavBar/NavBar'
+
+
 export const Product = () => {
-    
+
   const [data, setData] = useState([])
 
   useEffect(() => {
