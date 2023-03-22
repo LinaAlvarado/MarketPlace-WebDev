@@ -25,14 +25,18 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
+  justify-content: center;
+  margin: 0em 10em;
 }
 
-.image-product{
-width: 587px;
-height: 419px;
+.image-product {
+  width: 500px;
+  height: 419px;
 }
 
 .button-social {
+  margin-left: 6em;
+  margin-top: 2em;
   background-color: #dddddd;
   width: 336px;
   height: 34px;
