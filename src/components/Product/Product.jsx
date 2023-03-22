@@ -3,6 +3,7 @@ import { requestOneProduct } from '../../lib/requests'
 import { useEffect, useState } from 'react'
 import NavBar from '../NavBar/NavBar'
 export const Product = () => {
+    
   const [data, setData] = useState([])
 
   useEffect(() => {
@@ -19,7 +20,7 @@ export const Product = () => {
         <section className='image-container'>
           <img
             className='image-product'
-            src=''
+            src={data.images ? data.images[0] : ''}
             alt='Product'
           />
           <button className='button-social'>Share on social media</button>
