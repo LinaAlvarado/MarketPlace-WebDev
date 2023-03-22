@@ -19,7 +19,7 @@ export const Card = ({ element }) => {
         <div class='c-Product__name'>{element.title}</div>
         <div class='c-Product__price'>$ {element.price}</div>
         <span class='c-Product__desccrption'> {element.description}</span>
-        <button onClick={onclick}>See</button>
+        <button  className='buttonSee' onClick={onclick}>See</button>
       </div>
     </div>
   )
