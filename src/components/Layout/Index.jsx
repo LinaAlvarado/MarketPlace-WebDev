@@ -1,10 +1,12 @@
+
 import { Filter } from "../Filter"
 import { Products } from "../Productos"
+import NavBar from "../NavBar/NavBar"
 
 const Layout = () => {
     return (
         <>
-            <h1> Layout </h1>
+            <NavBar/>
             <Filter />
             <Products />
 
